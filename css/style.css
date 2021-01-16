@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/*// RESET INPUTS //*/
+
+input,textarea{
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    resize: none;
+    overflow-y: auto;
+}
+
+input[type=text]:focus,input[type=number]:focus,input[type=password]:focus,input[type=email]:focus,input[type=text]:focus,textarea:focus,select:focus,input[type=submit]:focus{
+    outline: 0;
+}
+
+/*// BOOTCSS //*/
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+img{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*// style //*/
+
+/*// header //*/
+
+header{
+    padding: 15px 0;
+
+    background-color: #4286f4;
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo a{
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav li{
+    padding: 0 15px;
+    display: inline-block;
+}
+
+header nav a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+/*// end header //*/
+
+/*// search1 //*/
+
+section.search1{
+    padding: 30px 0;
+
+    color: white;
+    text-align: center;
+    background-color: #357df2;
+}
+
+section.search1 h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.search1 input[type=text]{
+    width: 100%;
+    height: 40px;
+
+    padding-left: 8px;
+    margin-top: 15px;
+
+    font-size: 17px;
+}
+
+/*// end search1 //*/
+
+/*// search2 //*/
+
+section.search2{
+    padding: 30px 0;
+
+    color: white;
+    border-top: 2px solid white;
+    background-color: #357df2;
+}
+
+form.form_search2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.form__group{
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.form__group label{
+    display: block;
+}
+
+.form__group input[type=text],
+.form__group input[type=number]{
+    width: 100%;
+    height: 38px;
+
+    padding-left: 10px;
+}
+
+/*// end search2 //*/
+
+/*// lista imoveis //*/
+
+.title__busca{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #646464;
+    font-size: 22px;
+    font-weight: normal;
+    color: #646464;
+}
+
+section.lista__imoveis{
+    padding: 30px 0;
+}
+
+section.lista__imoveis .row__imoveis{
+    display: flex;
+    margin-bottom: 30px;
+
+    background-color: rgb(225, 225, 225);
+    border-radius: 20px;
+}
+
+.r1{width: 30%;}
+.r1 img{max-width: 100%;display: block;}
+.r2{
+    width: 70%;
+    padding: 20px;
+    color: black;
+    font-size: 15px;
+}
+
+.r2 p{
+    padding: 8px 0;
+    border-bottom: 1px solid #646464;
+}
+
+@media screen and (max-width:768px){
+    form.form_search2{
+        width: 100%;
+    }
+}
